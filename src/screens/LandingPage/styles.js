@@ -6,7 +6,6 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Constants.primaryColor,
-    justifyContent: 'center',
   },
   landingText: {
     fontSize: 40,
@@ -21,21 +20,36 @@ export default StyleSheet.create({
   },
   alignText: {
     margin: 20,
-    paddingTop: 15,
+    zIndex: 999,
   },
   img: {
-    marginTop: Constants.deviceHeight / 7,
-    width: Constants.deviceWidth,
-    height: 230,
+    flex: 1,
+    width: undefined,
+    height: undefined,
+  },
+  alignImg: {
+    height: '50%',
+    position: 'absolute',
+    bottom: -40,
+    width: '100%',
+    zIndex: 1,
   },
   alignButton: {
-    width: Constants.deviceWidth,
+    width: Constants.deviceWidth - 40,
+    alignSelf: 'center',
     alignItems: 'center',
+    zIndex: 999,
   },
   btn: {
-    width: Constants.deviceWidth - 40,
+    width: Constants.deviceWidth - 150,
     backgroundColor: '#fff',
     marginVertical: 5,
+  },
+  btnLogin: {
+    alignSelf: 'flex-start',
+  },
+  btnRegister: {
+    alignSelf: 'flex-end',
   },
   btnText: {
     color: Constants.primaryColor,

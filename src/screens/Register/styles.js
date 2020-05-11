@@ -30,4 +30,21 @@ export default StyleSheet.create({
     fontSize: 20,
     marginVertical: 8,
   },
+  btn: {
+    width: Constants.deviceWidth - 55,
+    marginVertical: 15,
+  },
+  returnText: {
+    textAlign: 'center',
+    fontFamily: 'Jost Regular',
+    fontSize: 18,
+    color: Constants.primaryColor,
+    textDecorationLine: 'underline',
+  },
+  forgetText: {
+    fontFamily: 'Jost Regular',
+    fontSize: 16,
+    marginVertical: 5,
+    color: Constants.primaryColor,
+  },
 });

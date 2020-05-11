@@ -1,10 +1,11 @@
 import React from 'react';
-import {View} from 'react-native';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 
 import styles from './styles';
+
 import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
@@ -17,6 +18,14 @@ const SignupSchema = Yup.object().shape({
     .required('Required'),
   email: Yup.string()
     .email('Invalid email')
+    .required('Required'),
+  password: Yup.string()
+    .min(6, 'Too Short!')
+    .max(12, 'Too Long!')
+    .required('Required'),
+  username: Yup.string()
+    .min(5, 'Too short!')
+    .max(12, 'Too long!')
     .required('Required'),
 });
 
@@ -43,7 +52,7 @@ const RegisterForm = props => {
             onChangeText={handleChange('firstName')}
             onBlur={handleBlur('firstName')}
             value={values.firstName}
-            placeholder="First Name"
+            placeholder="Primeiro Nome"
           />
           <Input
             style={styles.input}
@@ -51,7 +60,7 @@ const RegisterForm = props => {
             onChangeText={handleChange('lastName')}
             onBlur={handleBlur('lastName')}
             value={values.lastName}
-            placeholder="Last Name"
+            placeholder="Último Nome"
           />
           <Input
             style={styles.input}
@@ -67,7 +76,7 @@ const RegisterForm = props => {
             onChangeText={handleChange('username')}
             onBlur={handleBlur('username')}
             value={values.username}
-            placeholder="Username"
+            placeholder="Usuário"
           />
           <Input
             style={styles.input}
@@ -76,8 +85,11 @@ const RegisterForm = props => {
             onChangeText={handleChange('password')}
             onBlur={handleBlur('password')}
             value={values.password}
-            placeholder="Password"
+            placeholder="Senha"
           />
+          <Button style={styles.btn} onPress={handleSubmit}>
+            Criar minha conta
+          </Button>
         </>
       )}
     </Formik>

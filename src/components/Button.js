@@ -6,7 +6,10 @@ import Constants from '../utils/Constants';
 
 const Button = props => {
   return (
-    <Ripple style={{...styles.btn, ...props.style}} onPress={props.onPress}>
+    <Ripple
+      style={{...styles.btn, ...props.style}}
+      onPress={props.onPress}
+      rippleContainerBorderRadius={50}>
       <Text style={{...styles.text, ...props.textStyle}}>{props.children}</Text>
     </Ripple>
   );
@@ -16,10 +19,9 @@ const styles = StyleSheet.create({
   btn: {
     padding: 12,
     backgroundColor: Constants.primaryColor,
-    borderRadius: 3,
+    borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 2,
   },
   text: {
     fontFamily: 'Jost Regular',

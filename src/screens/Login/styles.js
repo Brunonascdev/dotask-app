@@ -5,6 +5,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#fff',
   },
   alignForgetPasswordText: {
@@ -17,10 +18,13 @@ export default StyleSheet.create({
     marginBottom: 120,
   },
   imgSize: {
-    width: 360,
-    height: 360,
-    marginVertical: -60,
-    marginTop: 0,
+    flex: 1,
+    width: undefined,
+    height: undefined,
+  },
+  alignImg: {
+    height: '50%',
+    width: '100%',
   },
   text: {
     fontFamily: 'Jost Light',
@@ -39,6 +43,17 @@ export default StyleSheet.create({
   },
   btn: {
     marginVertical: 5,
+  },
+  returnBtn: {
+    alignSelf: 'center',
+    marginVertical: 15,
+  },
+  returnText: {
+    textAlign: 'center',
+    fontFamily: 'Jost Regular',
+    fontSize: 18,
+    color: Constants.primaryColor,
+    textDecorationLine: 'underline',
   },
   forgetText: {
     fontFamily: 'Jost Regular',
