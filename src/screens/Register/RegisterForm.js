@@ -23,10 +23,6 @@ const SignupSchema = Yup.object().shape({
     .min(6, 'Too Short!')
     .max(12, 'Too Long!')
     .required('Required'),
-  username: Yup.string()
-    .min(5, 'Too short!')
-    .max(12, 'Too long!')
-    .required('Required'),
 });
 
 const RegisterForm = props => {
@@ -69,14 +65,6 @@ const RegisterForm = props => {
             onBlur={handleBlur('email')}
             value={values.email}
             placeholder="Email"
-          />
-          <Input
-            style={styles.input}
-            iconName="user"
-            onChangeText={handleChange('username')}
-            onBlur={handleBlur('username')}
-            value={values.username}
-            placeholder="Usuário"
           />
           <Input
             style={styles.input}

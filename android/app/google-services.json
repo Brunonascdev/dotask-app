@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "258663579490",
+    "firebase_url": "https://dotask-a7e51.firebaseio.com",
+    "project_id": "dotask-a7e51",
+    "storage_bucket": "dotask-a7e51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258663579490:android:f9a2b0c57aea1d24d3363b",
+        "android_client_info": {
+          "package_name": "com.basic_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258663579490-7bdqghojuiaq05pr4438q2tpgaid0sm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh2xEQAUfQvYr2agbUpSZXv9No8pPVJJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258663579490-7bdqghojuiaq05pr4438q2tpgaid0sm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

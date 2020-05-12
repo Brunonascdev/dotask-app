@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, ScrollView, Text, Image, TouchableOpacity} from 'react-native';
+import {View, ScrollView, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 import Lottie from 'lottie-react-native';
 
