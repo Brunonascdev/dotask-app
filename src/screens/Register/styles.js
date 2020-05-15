@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 import Constants from '../../utils/Constants';
 
@@ -8,18 +9,16 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   landingText: {
-    fontSize: 28,
+    fontSize: hp('4%'),
     fontFamily: 'Jost Bold',
+    textAlign: 'center',
   },
   dotaskStyle: {
     color: Constants.primaryColor,
   },
-  alignTextAndInputs: {
-    margin: 25,
-  },
   descText: {
     fontFamily: 'Jost Medium',
-    fontSize: 22,
+    fontSize: hp('3%'),
   },
   formView: {
     width: Constants.deviceWidth,
@@ -27,7 +26,7 @@ export default StyleSheet.create({
   },
   input: {
     width: Constants.deviceWidth - 55,
-    fontSize: 20,
+    fontSize: hp('2.5%'),
     marginVertical: 8,
   },
   btn: {
@@ -37,14 +36,8 @@ export default StyleSheet.create({
   returnText: {
     textAlign: 'center',
     fontFamily: 'Jost Regular',
-    fontSize: 18,
+    fontSize: hp('2.8%'),
     color: Constants.primaryColor,
     textDecorationLine: 'underline',
-  },
-  forgetText: {
-    fontFamily: 'Jost Regular',
-    fontSize: 16,
-    marginVertical: 5,
-    color: Constants.primaryColor,
   },
 });

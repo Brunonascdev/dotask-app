@@ -9,7 +9,11 @@ const Register = props => {
   return (
     <View style={styles.container}>
       <ScrollView
-        contentContainerStyle={{flexGrow: 1, justifyContent: 'center'}}
+        contentContainerStyle={{
+          flexGrow: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
         showsVerticalScrollIndicator={false}>
         <View style={styles.alignTextAndInputs}>
           <Text style={styles.landingText}>

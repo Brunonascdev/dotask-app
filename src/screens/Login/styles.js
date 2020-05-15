@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import Constants from '../../utils/Constants';
+import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default StyleSheet.create({
   container: {
@@ -28,7 +29,7 @@ export default StyleSheet.create({
   },
   text: {
     fontFamily: 'Jost Light',
-    fontSize: 28,
+    fontSize: hp('4%'),
     textAlign: 'center',
   },
   alignText: {
@@ -38,7 +39,7 @@ export default StyleSheet.create({
   },
   input: {
     width: Constants.deviceWidth - 60,
-    fontSize: 20,
+    fontSize: hp('2.5%'),
     marginVertical: 8,
   },
   btn: {
@@ -51,13 +52,13 @@ export default StyleSheet.create({
   returnText: {
     textAlign: 'center',
     fontFamily: 'Jost Regular',
-    fontSize: 18,
+    fontSize: hp('2.6%'),
     color: Constants.primaryColor,
     textDecorationLine: 'underline',
   },
   forgetText: {
     fontFamily: 'Jost Regular',
-    fontSize: 16,
+    fontSize: hp('2%'),
     marginVertical: 5,
     color: Constants.primaryColor,
   },

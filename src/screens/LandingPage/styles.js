@@ -1,4 +1,8 @@
 import {StyleSheet} from 'react-native';
+import {
+  heightPercentageToDP as hp,
+  widthPercentageToDP as wp,
+} from 'react-native-responsive-screen';
 
 import Constants from '../../utils/Constants';
 
@@ -8,14 +12,13 @@ export default StyleSheet.create({
     backgroundColor: Constants.primaryColor,
   },
   landingText: {
-    fontSize: 40,
+    fontSize: hp('5%'),
     fontFamily: 'Jost Bold',
-    lineHeight: 45,
     color: '#FFF',
   },
   descriptionText: {
     fontFamily: 'Jost Medium',
-    fontSize: 24,
+    fontSize: hp('3%'),
     color: '#FFF',
   },
   alignText: {
@@ -28,10 +31,10 @@ export default StyleSheet.create({
     height: undefined,
   },
   alignImg: {
-    height: '50%',
+    height: hp('50%'),
     position: 'absolute',
     bottom: -40,
-    width: '100%',
+    width: wp('100%'),
     zIndex: 1,
   },
   alignButton: {
@@ -53,6 +56,6 @@ export default StyleSheet.create({
   },
   btnText: {
     color: Constants.primaryColor,
-    fontSize: 20,
+    fontSize: hp('2.8%'),
   },
 });
